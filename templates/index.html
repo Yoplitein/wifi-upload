@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>wifi-upload</title>
+</head>
+<body>
+    {% if success != None %}
+        <h4>Upload
+        {% if success %}
+            succeeded.
+        {% else %}
+            failed!
+        {% endif %}
+        </h4>
+    {% endif %}
+    <form method="post" action="/" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>
