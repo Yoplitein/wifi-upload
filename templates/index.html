@@ -4,6 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>wifi-upload</title>
+    <style>
+        body {
+            padding: .5em;
+        }
+        
+        input {
+            display: block;
+        }
+        
+        input + input {
+            margin-top: 1em;
+        }
+    </style>
 </head>
 <body>
     {% if success != None %}
@@ -16,6 +29,25 @@
         </h4>
     {% endif %}
     <form method="post" action="/" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="file" name="file">
+        <input type="file" name="file">
+        <input type="file" name="file">
+        <input type="file" name="file">
+        <input type="file" name="file">
+        <input type="file" name="file">
+        <input type="file" name="file">
+        <input type="file" name="file">
+        <input type="file" name="file">
+        <input type="file" name="file">
+        <input type="file" name="file">
+        <input type="file" name="file">
+        <input type="file" name="file">
+        <input type="file" name="file">
+        <input type="file" name="file">
+        <input type="file" name="file">
+        <input type="file" name="file">
+        <input type="file" name="file">
         <input type="file" name="file">
         <input type="submit" value="Upload">
     </form>
