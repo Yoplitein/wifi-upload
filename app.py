@@ -19,7 +19,6 @@ def upload():
         files = [f for f in files if f.filename != ""]
         assert len(files) > 0
         for i, file in enumerate(files):
-            file = request.files["file"]
             ext = path.splitext(file.filename)[1].strip(".")
             assert ext != ""
             name = get_filename(ext, (i + 1) if len(files) > 1 else None)
