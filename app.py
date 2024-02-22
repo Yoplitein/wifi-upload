@@ -30,4 +30,6 @@ def upload():
 def get_filename(ext, seq):
     if seq != None:
         seq = f"_{seq}"
+    else:
+        seq = ""
     return datetime.now().strftime(f"%Y-%m-%d_%H-%M-%S{seq}.{ext}")
